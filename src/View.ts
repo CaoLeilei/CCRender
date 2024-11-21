@@ -1,6 +1,8 @@
 import { LayerManage } from "./LayersManage";
 export class View {
   private layers: LayerManage;
+  private _renderer: any;
+
   constructor() {
     this.layers = new LayerManage();
   }
@@ -11,6 +13,6 @@ export class View {
   removeLayer() {}
 
   render() {
-    this.layers.render();
+    // this.layers.render();
   }
 }
